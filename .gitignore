@@ -1,0 +1,8 @@
+# Local SQLite database created by backend/server.py
+backend/*.db
+backend/*.db-journal
+
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

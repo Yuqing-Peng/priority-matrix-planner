@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="calendar.css">
+    <script src="/api/bootstrap.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="calendar.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button id="homeButton">Home</button>
+            <div class="navigation">
+                <button id="prevMonth">«</button>
+                <div>
+                    <span id="month"></span>
+                    <span id="year"></span>
+                </div>
+                <button id="nextMonth">»</button>
+                <button id="openPicker">📅</button>
+            </div>
+        </div>
+        <div class="calendar">
+            <table id="calendarTable">
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody id="calendarBody"></tbody>
+            </table>
+        </div>
+    </div>
+    <div id="datePicker" class="date-picker">
+        <div class="picker-header">
+            <select id="monthSelect"></select>
+            <select id="yearSelect"></select>
+        </div>
+        <button id="setDate">Set Date</button>
+    </div>
+</body>
+</html>
